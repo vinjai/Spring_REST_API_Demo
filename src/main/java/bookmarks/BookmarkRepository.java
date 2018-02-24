@@ -8,5 +8,5 @@ import java.util.Collection;
  * Created by vinayak.j on 2/24/2018.
  */
 public interface BookmarkRepository extends JpaRepository<Bookmark,Long>{
-    Collection<Bookmark> findByAccountUsename(String username);
+    Collection<Bookmark> findByAccountUsername(String username);
 }
