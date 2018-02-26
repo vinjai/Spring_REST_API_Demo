@@ -1,4 +1,4 @@
-package bookmarks;
+package bookmarks.hateoas;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

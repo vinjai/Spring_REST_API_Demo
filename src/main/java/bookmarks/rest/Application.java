@@ -1,4 +1,4 @@
-package bookmarks;
+package bookmarks.rest;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
