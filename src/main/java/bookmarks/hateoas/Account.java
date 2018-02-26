@@ -1,4 +1,4 @@
-package bookmarks;
+package bookmarks.hateoas;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -27,26 +27,27 @@ public class Account {
     @OneToMany(mappedBy = "account")
     private Set<Bookmark> bookmarks = new HashSet<>();
 
-    private Account(){}
-
-    Account(final String username,final String password){
-        this.username=username;
-        this.password=password;
+    private Account() {
     }
 
-    public Long getId(){
+    Account(final String username, final String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public Long getId() {
         return this.id;
     }
 
-    public String getUsername(){
+    String getUsername() {
         return this.username;
     }
 
-    public String getPassword(){
+    String getPassword() {
         return this.password;
     }
 
-    public Set<Bookmark> getBookmarks(){
+    public Set<Bookmark> getBookmarks() {
         return bookmarks;
     }
 }

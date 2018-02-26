@@ -1,4 +1,4 @@
-package bookmarks;
+package bookmarks.hateoas;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -25,27 +25,28 @@ public class Bookmark {
 
     private String description;
 
-    private Bookmark(){}
-
-    Bookmark(final Account account,final String uri,final String description){
-        this.uri=uri;
-        this.account=account;
-        this.description=description;
+    private Bookmark() {
     }
 
-    public Long getId(){
+    Bookmark(final Account account, final String uri, final String description) {
+        this.uri = uri;
+        this.account = account;
+        this.description = description;
+    }
+
+    Long getId() {
         return this.id;
     }
 
-    public String getUri(){
+    String getUri() {
         return this.uri;
     }
 
-    public String getDescription(){
+    String getDescription() {
         return this.description;
     }
 
-    public Account getAccount(){
+    public Account getAccount() {
         return this.account;
     }
 }

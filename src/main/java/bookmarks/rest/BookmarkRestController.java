@@ -1,4 +1,4 @@
-package bookmarks;
+package bookmarks.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
